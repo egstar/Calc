@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { width:100%;position:fixed; bottom:0; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="calc-frame">
+      <div class="calc-head">
+        <div class="calc-title">
+          <h1>calc</h1>
+        </div>
+
+        <div class="calc-option">
+          <div class="theme-text">THEME</div>
+
+          <div class="theme-switcher">
+            <div class="input-group" data-no="1">
+              <input class="toggler-radio" type="radio" onchange="switchTheme('theme1')" name="theme-toggler" id="theme1" />
+              <label class="toggler-label" for="theme1">
+              </label>
+            </div>
+            <div class="input-group" data-no="2">
+              <input class="toggler-radio" type="radio" onchange="switchTheme('theme2')" name="theme-toggler" id="theme2"  />
+              <label class="toggler-label" for="theme2" >
+              </label>
+            </div>
+            <div class="input-group" data-no="3">
+              <input class="toggler-radio" type="radio"  onchange="switchTheme('theme3')" name="theme-toggler" id="theme3"  />
+              <label class="toggler-label" for="theme3">
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="calc-screen">
+        <div class="screen-text">0</div>
+      </div>
+
+      <div class="calc-pad">
+          <button id="key7" data-value='7' class="pad-key"><span>7</span></button>
+          <button id="key8" data-value='8' class="pad-key"><span>8</span></button>
+          <button id="key9" data-value="9" class="pad-key"><span>9</span></button>
+          <button id="keyD" class="pad-key"><span>DEL</span></button>
+
+          <button id="key4" data-value="4" class="pad-key"><span>4</span></button>
+          <button id="key5" data-value="5" class="pad-key"><span>5</span></button>
+          <button id="key6" data-value="6" class="pad-key"><span>6</span></button>
+          <button id="keyA" data-value="+" class="pad-key"><span>+</span></button>
+
+          <button id="key1" data-value="1" class="pad-key"><span>1</span></button>
+          <button id="key2" data-value="2" class="pad-key"><span>2</span></button>
+          <button id="key3" data-value="3" class="pad-key"><span>3</span></button>
+          <button id="keyN" data-value="-" class="pad-key"><span>-</span></button>
+
+          <button id="keyP" data-value="." class="pad-key"><span>.</span></button>
+          <button id="key0" data-value="0" class="pad-key"><span>0</span></button>
+          <button id="keyM" data-value="/" class="pad-key"><span>/</span></button>
+          <button id="keyX" data-value="*" class="pad-key"><span>×</span></button>
+
+          <button id="keyR" class="pad-key"><span>RESET</span></button>
+          <button id="keyE" class="pad-key"><span>=</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Burham Soliman</a>.
+  </div>
+  <script src="./assets/js/themeSwitch.js"></script>
+  <script src="./assets/js/calc.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
